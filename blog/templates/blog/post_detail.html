@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div>
+        <h1> {{ post.title }} </h1>
+        <h5> {{ post.text }} </h5>
+    </div>
+    <div>
+        <p> Опубликовано {{ post.author }} </p>
+        <p> {{ post.create_date }} </p>
+    </div>
+{% endblock %}

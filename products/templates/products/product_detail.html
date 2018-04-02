@@ -1,0 +1,11 @@
+{% extends "products/base.html" %}
+{% block content %}
+    <div>
+        <h1> {{ product.title }} </h1>
+        <h5> {{ product.text }} </h5>
+    </div>
+    <div>
+        <p> Опубликовано {{ product.author }} </p>
+        <p> {{ product.create_date }} </p>
+    </div>
+{% endblock %}
